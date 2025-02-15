@@ -11,16 +11,7 @@ return {
     config = function()
       require "configs.lspconfig"
     end,
-  },
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "clangd"
-      }
-    }
-  },
-
+  }, 
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
