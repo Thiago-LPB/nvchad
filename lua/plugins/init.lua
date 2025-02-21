@@ -12,13 +12,22 @@ return {
       require "configs.lspconfig"
     end,
   }, 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    ft = {"python"},
+    opts = function()
+      return require "configs.null-ls"
+    end,
+  },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = {
+  			"vim", "lua", "vimdoc",
+       "html", "css", "cpp", "python",
+        "java", "javascript", "c", "rust",
+        "c_sharp", "go"
+  		},
+  	},
+  },
 }
